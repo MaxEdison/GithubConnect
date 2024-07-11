@@ -130,7 +130,7 @@ TOKEN = input(""">Enter your github Personal Access Token :
 
 headers = {'Authorization': f'token {TOKEN}'}
 
-PORT = 8002
+PORT = 8000
 Handler = ServerSetup
 
 with socketserver.TCPServer(("", PORT), Handler) as httpd:
